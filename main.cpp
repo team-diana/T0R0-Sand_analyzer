@@ -11,20 +11,7 @@ int main(int argc, char *argv[])
 {
     VideoCapture cap;
     Mat src;
-
-/*
-    // Load the image
-    CommandLineParser parser( argc, argv, "{@input | ../data/cards.png | input image}" );
-    Mat src = imread( parser.get<String>( "@input" ) );
-    if( src.empty() )
-    {
-        cout << "Could not open or find the image!\n" << endl;
-        cout << "Usage: " << argv[0] << " <Input image>" << endl;
-        return -1;
-    }
-    // Show source image
-    imshow("Source Image", src);
-*/
+    
     if(!cap.open(1))
     {
         cout << "Rotto!" << endl;
